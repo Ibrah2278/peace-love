@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Prise de Rendez-vous - PEACE AND LOVE</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #e6f0ff, #ffffff);
+      color: #003366;
+    }
+
+    header {
+      background: linear-gradient(to right, #66a6ff, #89f7fe);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+      border-bottom: 5px solid #ddeeff;
+    }
+
+    .logo-circle {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 60px;
+      height: 60px;
+      background-color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Si tu veux mettre un logo, décommente et remplace src 
+    .logo-circle img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    } */
+
+    nav {
+      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    nav a {
+      color: #003366;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #0077cc;
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #002244;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    form {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 8px;
+      display: block;
+      color: #003366;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 12px 14px;
+      border: 2px solid #66a6ff;
+      border-radius: 8px;
+      font-size: 16px;
+      color: #003366;
+      resize: vertical;
+      transition: border-color 0.3s ease;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    textarea:focus,
+    select:focus {
+      outline: none;
+      border-color: #0077cc;
+      background: #f0f8ff;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 10px;
+      transform: scale(1.2);
+      vertical-align: middle;
+      cursor: pointer;
+    }
+
+    .option-group {
+      margin-left: 20px;
+      margin-top: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px 30px;
+    }
+
+    .option-group label {
+      font-weight: normal;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      color: #003366;
+    }
+
+    button {
+      margin-top: 30px;
+      background-color: #66a6ff;
+      color: white;
+      padding: 16px;
+      border: none;
+      border-radius: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+      align-self: center;
+      width: 200px;
+    }
+    button:hover {
+      background-color: #0077cc;
+    }
+
+    footer {
+      background: linear-gradient(to right, #66a6ff, #89f7fe);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+
+    /* Pour le petit * en rouge */
+    .required-star {
+      color: #e00;
+      margin-left: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>PEACE AND LOVE</h1>
+  <p>Prise de rendez-vous - Bilan psychologique</p>
+  <!-- <div class="logo-circle">
+    <img src="logo.png" alt="Logo PEACE AND LOVE" />
+  </div> -->
+</header>
+
+<nav>
+  <a href="index.html">Accueil</a>
+  <a href="about.html">À propos</a>
+  <a href="services.html">Services</a>
+  <a href="histoire.html">Histoire</a>
+  <a href="application.html">Application</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <h1>Formulaire de prise de rendez-vous</h1>
+  <form action="#" method="post">
+
+    <label for="facteurs">Selon vous, quels sont les facteurs qui ont déclenché les symptômes ressentis ? <span class="required-star">*</span></label>
+    <textarea id="facteurs" name="facteurs" rows="3" required></textarea>
+
+    <label>Seriez-vous intéressé(e) par une aide psychologique ou un accompagnement ? <span class="required-star">*</span></label>
+    <div class="option-group">
+      <label><input type="radio" name="interet_aide" value="Oui" required /> Oui</label>
+      <label><input type="radio" name="interet_aide" value="Peut-être" /> Peut-être</label>
+      <label><input type="radio" name="interet_aide" value="Non" /> Non</label>
+    </div>
+
+    <label for="recontact">Souhaitez-vous être recontacté(e) pour un suivi ? (si oui, indiquer un contact)</label>
+    <textarea id="recontact" name="recontact" rows="2" placeholder="Téléphone, email..."></textarea>
+
+    <label>Comment évalueriez-vous votre état émotionnel global ces dernières semaines ? <span class="required-star">*</span></label>
+    <div class="option-group">
+      <label><input type="radio" name="etat_emotionnel" value="Plutôt bon" required /> Plutôt bon</label>
+      <label><input type="radio" name="etat_emotionnel" value="Moyen" /> Moyen</label>
+      <label><input type="radio" name="etat_emotionnel" value="Mauvais" /> Mauvais</label>
+      <label><input type="radio" name="etat_emotionnel" value="Très mauvais" /> Très mauvais</label>
+      <label><input type="radio" name="etat_emotionnel" value="Aucun sentiment" /> Aucun sentiment</label>
+    </div>
+
+    <label>Symptômes ressentis récemment (cochez tout ce qui s’applique) :</label>
+    <div class="option-group">
+      <label><input type="checkbox" name="symptomes" value="Anxiété excessive" /> Anxiété excessive</label>
+      <label><input type="checkbox" name="symptomes" value="Tristesse fréquente" /> Tristesse fréquente</label>
+      <label><input type="checkbox" name="symptomes" value="Troubles du sommeil" /> Troubles du sommeil</label>
+      <label><input type="checkbox" name="symptomes" value="Difficulté à se concentrer" /> Difficulté à se concentrer</label>
+      <label><input type="checkbox" name="symptomes" value="Fatigue permanente" /> Fatigue permanente</label>
+      <label><input type="checkbox" name="symptomes" value="Perte d’intérêt pour les activités habituelles" /> Perte d’intérêt pour les activités habituelles</label>
+      <label><input type="checkbox" name="symptomes" value="Pensées négatives persistantes" /> Pensées négatives persistantes</label>
+      <label><input type="checkbox" name="symptomes" value="Idées suicidaires" /> Idées suicidaires</label>
+    </div>
+
+    <label>Avez-vous déjà consulté un professionnel en santé mentale ? <span class="required-star">*</span></label>
+    <div class="option-group">
+      <label><input type="radio" name="consultation" value="Oui, récemment" required /> Oui, récemment</label>
+      <label><input type="radio" name="consultation" value="Oui, il y a longtemps" /> Oui, il y a longtemps</label>
+      <label><input type="radio" name="consultation" value="Non, jamais" /> Non, jamais</label>
+    </div>
+
+    <label>Quel type de soutien vous semblerait utile ?</label>
+    <div class="option-group">
+      <label><input type="checkbox" name="soutien" value="Thérapie individuelle" /> Thérapie individuelle</label>
+      <label><input type="checkbox" name="soutien" value="Thérapie de groupe" /> Thérapie de groupe</label>
+      <label><input type="checkbox" name="soutien" value="Ateliers de gestion du stress" /> Ateliers de gestion du stress</label>
+      <label><input type="checkbox" name="soutien" value="Ligne d'écoute anonyme" /> Ligne d'écoute anonyme</label>
+      <label><input type="checkbox" name="soutien" value="Activités bien-être (méditation, sport, etc.)" /> Activités bien-être (méditation, sport, etc.)</label>
+      <label><input type="checkbox" name="soutien" value="Autre" /> Autre</label>
+    </div>
+
+    <label for="commentaires">Commentaires ou remarques supplémentaires</label>
+    <textarea id="commentaires" name="commentaires" rows="3" placeholder="Votre message..."></textarea>
+
+    <button type="submit">Envoyer</button>
+  </form>
+</main>
+
+<footer>
+  &copy; 2025 PEACE AND LOVE. Tous droits réservés.
+</footer>
+
+</body>
+</html>

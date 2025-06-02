@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Application - PEACE AND LOVE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #e6f0ff, #ffffff);
+      color: #003366;
+    }
+
+    header {
+      background: linear-gradient(to right, #66a6ff, #89f7fe);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+      border-bottom: 5px solid #ddeeff;
+    }
+
+    .logo-circle {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 60px;
+      height: 60px;
+      background-color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo-circle img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    nav {
+      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    nav a {
+      color: #003366;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #0077cc;
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #002244;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .service {
+      background: white;
+      padding: 25px 30px;
+      margin-bottom: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
+    .service ul {
+      padding-left: 20px;
+    }
+
+    .service ul li {
+      margin-bottom: 8px;
+    }
+
+    .download-btn {
+      display: block;
+      width: fit-content;
+      margin: 30px auto 0;
+      background-color: #0055aa;
+      color: white;
+      padding: 14px 24px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #003f88;
+    }
+
+    footer {
+      background: linear-gradient(to right, #66a6ff, #89f7fe);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-circle">
+      <img src="logo.png" alt="Logo Peace and Love">
+    </div>
+    <h1>PEACE AND LOVE</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="about.html">À propos</a>
+    <a href="services.html">Services</a>
+    <a href="histoire.html">Histoire</a>
+    <a href="application.html">Application</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h1>Notre Application Mobile</h1>
+
+    <div class="service">
+      <p>Accessible 24h/24, notre application propose :</p>
+      <ul>
+        <li>Une intelligence artificielle vocale pour répondre aux questions, rassurer, accompagner.</li>
+        <li>Des vidéos et podcasts de motivation.</li>
+        <li>Des contenus éducatifs en développement personnel.</li>
+        <li>Des ebooks interactifs pour occuper les temps libres de façon enrichissante.</li>
+        <li>Choix de langue pour une accessibilité optimale.</li>
+      </ul>
+      <p>L’application est gratuite, mais nécessite une connexion internet pour son utilisation.</p>
+      <p>Téléchargez l’application et commencez votre accompagnement où que vous soyez !</p>
+      <a href="lien-de-telechargement" class="download-btn" download>Télécharger l’application</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 PEACE AND LOVE. Tous droits réservés.
+  </footer>
+
+</body>
+</html>

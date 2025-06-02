@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Accueil - PEACE AND LOVE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #e6f0ff, #ffffff);
+      color: #003366;
+    }
+
+    header {
+      background: linear-gradient(to right, #66a6ff, #89f7fe);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+      border-bottom: 5px solid #ddeeff;
+    }
+
+    .logo-circle {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 60px;
+      height: 60px;
+      background-color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo-circle img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    nav {
+      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    nav a {
+      color: #003366;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #0077cc;
+      text-decoration: underline;
+    }
+
+    .hero {
+      padding: 60px 40px;
+      background-color: #f9fbff;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      max-width: 1200px;
+      margin: auto;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .hero-text h1 {
+      font-size: 36px;
+      color: #003366;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 17px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .hero-image {
+      flex: 1;
+      min-width: 250px;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      object-fit: cover;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .buttons a {
+      background: linear-gradient(to right, #66a6ff, #89f7fe);
+      color: white;
+      padding: 12px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 8px 15px rgba(102, 166, 255, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .buttons a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(102, 166, 255, 0.3);
+    }
+
+    footer {
+      background: linear-gradient(to right, #66a6ff, #89f7fe);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-circle">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <h1>PEACE AND LOVE</h1>
+    <p>Un chemin vers toi-même commence ici</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="about.html">À propos</a>
+    <a href="services.html">Services</a>
+    <a href="histoire.html">Histoire</a>
+    <a href="application.html">Application</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Bienvenue chez PEACE AND LOVE</h1>
+        <p>
+          PEACE AND LOVE est un centre de coaching dédié aux jeunes de 13 à 25 ans pour se reconnecter à soi-même, renforcer sa confiance, gérer ses émotions et développer ses talents.
+        </p>
+        <p>
+          Pendant un mois, nous vous accompagnons avec des activités variées : méditation, danse-thérapie, coaching individuel, sport-thérapie, et bien plus encore.
+        </p>
+        <div class="buttons">
+          <a href="contact.html">Prendre rendez-vous</a>
+          <a href="about.html">Découvrir le centre</a>
+          <a href="application.html">Télécharger l’application</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="./img/7.jpg" alt="illustration paix">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    PEACE AND LOVE © 2025 – Tous droits réservés
+  </footer>
+
+</body>
+</html>
